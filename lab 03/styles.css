@@ -1,0 +1,60 @@
+
+body {
+    
+    background-color: #f2f7fc;
+   
+}
+
+h1{
+    background-color: rgb(111, 210, 177);
+}
+.myUni {
+    color: darkblue;
+    
+    font-size: 18px;
+}
+
+
+#head2 {
+    color: darkgreen;
+   
+}
+
+
+img[alt="quaid-e-azam-university-logo.png"] {
+    border: 5px solid blue;
+}
+
+
+ol li {
+    color: darkred;
+}
+
+
+ul li {
+    color: purple;
+}
+
+p::first-letter {
+    font-size: 22px;
+    color: blue;
+}
+h2::first-line{
+    font-size: 28px;
+}
+
+
+li:hover {
+    background-color: #ddd;
+  
+}
+
+
+a:hover {
+    color: red;
+  
+}
+
+a[href^="https"]{
+    background-color: rgb(71, 132, 224) ;
+}
