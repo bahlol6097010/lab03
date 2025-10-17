@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahlol Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <header>
+        <h1>Personal Information Form</h1>
+        <p style="font-size: 20px;">Please fill in your personal details carefully.</p>
+    </header>
+
+    <main>
+        <form method="get" action="#">
+            <fieldset>
+                <legend><b>Personal Details</b></legend>
+
+                <p>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="Name" placeholder="Enter your full name" required>
+                </p>
+
+                <p>
+                    <label text="country">Country:</label>
+                    <select id="country" name="choices" required>
+                        <option value="">-- Select Country --</option>
+                        <option>Pakistan</option>
+                        <option>Canada</option>
+                        <option>England</option>
+                        <option>United States</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label text="email">Email:</label>
+                    <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                </p>
+
+                <p>
+                    <label>Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </p>
+
+                <p>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label>Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label>Female</label>
+                </p>
+
+                <div class="submit-btn">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>
