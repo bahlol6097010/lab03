@@ -1,0 +1,198 @@
+
+body {
+    background-image: url('backgrounds.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); 
+    z-index: -1;
+}
+
+
+h1 {
+    background-color: rgb(111, 210, 177);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.myUni {
+    color: rgb(214, 214, 228);
+    font-size: 18px;
+}
+
+
+#head2 {
+    color: darkgreen;
+}
+
+h2::first-line {
+    font-size: 28px;
+}
+
+
+img[alt="quaid-e-azam-university-logo.png"] {
+    border: 5px solid blue;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+    width: 120px;
+    height: auto;
+}
+
+
+ol li {
+    color: darkred;
+    padding: 5px;
+}
+
+ul li {
+    color: purple;
+    padding: 5px;
+}
+
+li:hover {
+    background-color: #ddd;
+   
+}
+
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+a[href^="https"] {
+    background-color: rgb(71, 132, 224);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+
+p::first-letter {
+    font-size: 22px;
+    color: blue;
+}
+
+section {
+    border: 2px solid #ccc;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.sports {
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: rgb(111, 210, 177);
+    color: white;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+tbody tr:hover {
+    background-color: rgba(111, 210, 177, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+th {
+    font-weight: bold;
+}
+
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 22px;
+    }
+    section {
+        margin: 15px;
+        padding: 10px;
+    }
+    table {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover; 
+        background-attachment: scroll; 
+        background-position: center center;
+    }
+    h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+    img {
+        width: 90px;
+    }
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+    table, th, td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    section {
+        margin: 8px;
+        padding: 8px;
+    }
+    table, th, td {
+        font-size: 0.85rem;
+    }
+}
